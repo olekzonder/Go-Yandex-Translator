@@ -12,7 +12,7 @@ import (
 
 func main() {
   cli := translate.NewClient(API TOKEN HERE, Folder ID here)
-  translation, err := cli.Translate([]string{"Hello World!"}, "en", "ru")
+  translation, _ := cli.Translate([]string{"Hello World!"}, "en", "ru")
   fmt.Println(translation[0])
   //OUTPUT:
   //Привет, мир!
